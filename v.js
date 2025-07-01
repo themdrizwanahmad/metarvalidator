@@ -1,5 +1,5 @@
-// validators.js
-export function validateMetar(rawMetar, prevQnh) {
+// v.js
+function validateMETAR(rawMetar, prevQnh) {
   const result = {
     errors: [],
     warnings: []
@@ -41,3 +41,6 @@ export function validateMetar(rawMetar, prevQnh) {
 
   return result;
 }
+
+// ✅ Attach to window (optional, for clarity)
+window.validateMETAR = validateMETAR;
